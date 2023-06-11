@@ -12,7 +12,7 @@ nomeoticas = ('otica-visiolux','otica-central', 'otica-teffe', 'otica-prado', 'o
               'otica-marine', 'otica-marin', 'visao-araucaria','mercadao-fazenda', 'estilo-visao', 'preco-popular-posto',
               'preco-popular-portao','klim-otica','preco-popular-duda-loja3', 'otica-sao-braz', 'opticolor', 'outlet-dos-oculos',
               'exame-visao','laboratorio-universo', 'preco-popular-cic', 'sao-braz-orleans', 'sao-braz-ponto-final',
-              'preco-pop-fazenda','top-vision', 'preco-pop-alm-tamandare', 'vista-alegre')
+              'preco-pop-fazenda','top-vision', 'preco-pop-alm-tamandare', 'vista-alegre','otica-ipanema','otica-viena')
 
 
 grid = Alinhamento(105,0)
@@ -23,7 +23,7 @@ mes = "Fevereiro"
     #montando a tabela
 
 for z in range(len(nomeoticas)):
-    with open("entrada de pedidos janeiro 2023 - Respostas ao formulário 1.csv", "r") as file:
+    with open("entrada de pedidos fevereiro 23.csv", "r") as file:
         reader = csv.DictReader(file)
         for row in reader:
             dataa = row["Data"].strip()
