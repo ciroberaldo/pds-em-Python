@@ -18,12 +18,12 @@ nomeoticas = ('otica-visiolux','otica-central', 'otica-teffe', 'otica-prado', 'o
 grid = Alinhamento(105,0)
 
 img_file = 'logo.png'
-mes = "Fevereiro"
+mes = "Maio"
 
     #montando a tabela
 
 for z in range(len(nomeoticas)):
-    with open("entrada de pedidos fevereiro 23.csv", "r") as file:
+    with open("pedidos_maio_2023 - Respostas ao formulário 1.csv", "r") as file:
         reader = csv.DictReader(file)
         for row in reader:
             dataa = row["Data"].strip()
