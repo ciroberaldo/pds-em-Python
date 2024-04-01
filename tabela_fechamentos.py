@@ -15,7 +15,7 @@ fechamento_anterior = 0
 somatotal = 0
 
 for z in range(len(nomeoticas)):
-    with open("pedidos_maio_2023 - Respostas ao formulário 1.csv", "r") as file:
+    with open("pedidos junho 2023 - Respostas ao formulário 1.csv", "r") as file:
         reader = csv.DictReader(file)
         for row in reader:
             otica = row["otica"].strip()
