@@ -2,12 +2,12 @@ import csv
 
 tabelas = list()
 
-nomeoticas = ('otica-visiolux','otica-central', 'otica-teffe', 'otica-prado', 'otica-clauss', 'parque-otica', 'otica-perfil',
-              'otica-zonatto', 'otica-ampla-visao', 'otica-miraluz', 'otica-visoluz', 'otica-anita','otica-malosti',
-              'otica-marine', 'otica-marin', 'visao-araucaria','mercadao-fazenda', 'estilo-visao', 'preco-popular-posto',
-              'preco-popular-portao','klim-otica','preco-popular-duda-loja3', 'otica-sao-braz', 'opticolor', 'outlet-dos-oculos',
-              'exame-visao','laboratorio-universo', 'preco-popular-cic', 'sao-braz-orleans', 'sao-braz-ponto-final',
-              'preco-pop-fazenda','top-vision', 'preco-pop-alm-tamandare', 'vista-alegre','otica-ipanema','otica-viena')
+nomeoticas = ('otica-visiolux','otica-central', 'otica-teffe', 'otica-prado', 'otica-perfil',
+              'otica-zonatto', 'otica-ampla-visao', 'otica-visoluz', 'otica-anita','otica-malosti',
+              'otica-marine', 'otica-marin', 'visao-araucaria','estilo-visao','klim-otica','preco-popular-duda-loja3',
+              'otica-sao-braz', 'opticolor', 'outlet-dos-oculos','exame-visao', 'preco-popular-cic', 'sao-braz-ecoville',
+              ,'preco-pop-fazenda', 'preco-pop-alm-tamandare', 'vista-alegre','otica-ipanema','otica-viena'
+              ,'visao-hauer','scarpim','soho-vision','isa-batel','martini')
 
 
     #montando a tabela
@@ -15,7 +15,7 @@ fechamento_anterior = 0
 somatotal = 0
 
 for z in range(len(nomeoticas)):
-    with open("pedidos junho 2023 - Respostas ao formulário 1.csv", "r") as file:
+    with open("entrada de pedidos Novembro2024 (respostas) - Respostas ao formulário 1.csv", "r") as file:
         reader = csv.DictReader(file)
         for row in reader:
             otica = row["otica"].strip()
